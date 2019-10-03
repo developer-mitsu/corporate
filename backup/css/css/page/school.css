@@ -1,0 +1,265 @@
+/* line 7, ../../sass/base/base.scss */
+body {
+  font-size: 14px;
+  font-family: Helvetica,Arial, sans-serif;
+  color: #707070;
+  background: #FDFCFA;
+}
+@media screen and (min-width: 600px) {
+  /* line 7, ../../sass/base/base.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* line 16, ../../sass/base/base.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 20, ../../sass/base/base.scss */
+.section {
+  padding: 20% 8%;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+@media screen and (min-width: 600px) {
+  /* line 20, ../../sass/base/base.scss */
+  .section {
+    padding: 5% 8%;
+  }
+}
+
+/* line 30, ../../sass/base/base.scss */
+.section.sec {
+  padding-left: 12%;
+}
+
+/* line 33, ../../sass/base/base.scss */
+.sec-title {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg) translateX(-10vh);
+  transform-origin: left top;
+  position: absolute;
+  top: 60vh;
+  left: 10%;
+  transition: 2s;
+  line-height: 24px;
+}
+/* line 43, ../../sass/base/base.scss */
+.sec-title span {
+  display: inline-block;
+  font-size: 0px;
+  margin: auto 12px;
+  width: 10vh;
+  border-bottom: 1px solid;
+}
+
+/* line 51, ../../sass/base/base.scss */
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 62, ../../sass/base/base.scss */
+input, textarea, button {
+  background: #fff;
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  line-height: 28px;
+}
+
+/* line 71, ../../sass/base/base.scss */
+#header h1.logo {
+  font-size: 1.3em;
+  padding-left: 8%;
+  letter-spacing: 4px;
+}
+
+/* line 78, ../../sass/base/base.scss */
+a.disabled {
+  pointer-events: none;
+}
+
+/* line 81, ../../sass/base/base.scss */
+a.toHome {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+  width: 100%;
+  padding: 10px;
+  background-color: #DD7373;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* line 91, ../../sass/base/base.scss */
+.thanks-message {
+  font-size: 1.5em;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+/* line 3, ../../sass/page/school.scss */
+.school-page {
+  background: #fff;
+  min-height: 100vh;
+}
+/* line 6, ../../sass/page/school.scss */
+.school-page #header {
+  height: auto;
+  min-height: unset;
+  height: 100px;
+  padding: 0 0 0 0;
+}
+/* line 12, ../../sass/page/school.scss */
+.school-page #school {
+  margin: 5% 8%;
+  background: #FDFCFA;
+  padding: 10% 5%;
+  text-align: center;
+}
+/* line 17, ../../sass/page/school.scss */
+.school-page #school .intro {
+  border-bottom: 1px solid;
+}
+/* line 19, ../../sass/page/school.scss */
+.school-page #school .intro h2 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+/* line 25, ../../sass/page/school.scss */
+.school-page #school .intro p {
+  line-height: 1.8em;
+  padding-bottom: 80px;
+}
+/* line 30, ../../sass/page/school.scss */
+.school-page #school .feature {
+  border-bottom: 1px solid;
+  padding: 5% 0px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 600px) {
+  /* line 30, ../../sass/page/school.scss */
+  .school-page #school .feature {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 37, ../../sass/page/school.scss */
+  .school-page #school .feature .border {
+    display: block;
+    border-left: 1px solid;
+  }
+}
+/* line 43, ../../sass/page/school.scss */
+.school-page #school .feature article {
+  padding: 5% 0%;
+}
+/* line 45, ../../sass/page/school.scss */
+.school-page #school .feature article:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  /* line 43, ../../sass/page/school.scss */
+  .school-page #school .feature article {
+    width: 30%;
+  }
+  /* line 50, ../../sass/page/school.scss */
+  .school-page #school .feature article:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+/* line 54, ../../sass/page/school.scss */
+.school-page #school .feature article img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* line 60, ../../sass/page/school.scss */
+.school-page #school .feature h3 {
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+/* line 68, ../../sass/page/school.scss */
+.school-page #school .school-content {
+  margin-top: 60px;
+}
+@media screen and (min-width: 600px) {
+  /* line 68, ../../sass/page/school.scss */
+  .school-page #school .school-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* line 74, ../../sass/page/school.scss */
+.school-page #school .school-content article {
+  padding: 5% 2% 2%;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+/* line 79, ../../sass/page/school.scss */
+.school-page #school .school-content article:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  /* line 74, ../../sass/page/school.scss */
+  .school-page #school .school-content article {
+    width: 30%;
+  }
+  /* line 84, ../../sass/page/school.scss */
+  .school-page #school .school-content article:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 74, ../../sass/page/school.scss */
+  .school-page #school .school-content article {
+    width: 25%;
+  }
+}
+/* line 91, ../../sass/page/school.scss */
+.school-page #school .school-content article img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* line 96, ../../sass/page/school.scss */
+.school-page #school .school-content article h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+/* line 103, ../../sass/page/school.scss */
+.school-page #school .school-content .content-img {
+  background: url("../img/mark.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 130px;
+}
+
+/* line 113, ../../sass/page/school.scss */
+.confirm #header {
+  min-height: unset;
+  height: 100px;
+  padding: 0 0 0 0;
+}

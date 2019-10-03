@@ -8,7 +8,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $name_how = $_POST['name_how'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-	$content = $_POST['content'];
+    $content = $_POST['content'];
+    $body = "";
     $body .= "氏名:".$name."\n";
     $body .= "氏名(フリガナ):".$name_how."\n";
     $body .= "メールアドレス:".$email."\n";
@@ -40,11 +41,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Permil.inc</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -63,6 +65,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             location.href = '../'
         })
     </script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

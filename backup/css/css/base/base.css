@@ -1,0 +1,114 @@
+/* line 7, ../../sass/base/base.scss */
+body {
+  font-size: 14px;
+  font-family: Helvetica,Arial, sans-serif;
+  color: #707070;
+  background: #FDFCFA;
+}
+@media screen and (min-width: 600px) {
+  /* line 7, ../../sass/base/base.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* line 16, ../../sass/base/base.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 20, ../../sass/base/base.scss */
+.section {
+  padding: 20% 8%;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+@media screen and (min-width: 600px) {
+  /* line 20, ../../sass/base/base.scss */
+  .section {
+    padding: 5% 8%;
+  }
+}
+
+/* line 30, ../../sass/base/base.scss */
+.section.sec {
+  padding-left: 12%;
+}
+
+/* line 33, ../../sass/base/base.scss */
+.sec-title {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg) translateX(-10vh);
+  transform-origin: left top;
+  position: absolute;
+  top: 60vh;
+  left: 10%;
+  transition: 2s;
+  line-height: 24px;
+}
+/* line 43, ../../sass/base/base.scss */
+.sec-title span {
+  display: inline-block;
+  font-size: 0px;
+  margin: auto 12px;
+  width: 10vh;
+  border-bottom: 1px solid;
+}
+
+/* line 51, ../../sass/base/base.scss */
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 62, ../../sass/base/base.scss */
+input, textarea, button {
+  background: #fff;
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  line-height: 28px;
+}
+
+/* line 71, ../../sass/base/base.scss */
+#header h1.logo {
+  font-size: 1.3em;
+  padding-left: 8%;
+  letter-spacing: 4px;
+}
+
+/* line 78, ../../sass/base/base.scss */
+a.disabled {
+  pointer-events: none;
+}
+
+/* line 81, ../../sass/base/base.scss */
+a.toHome {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+  width: 100%;
+  padding: 10px;
+  background-color: #DD7373;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* line 91, ../../sass/base/base.scss */
+.thanks-message {
+  font-size: 1.5em;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
