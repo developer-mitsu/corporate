@@ -4,32 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>株式会社Permil</title>
+    <title>株式会社パーミル | Permil inc.</title>
+    <meta name="description" content="株式会社パーミルのコーポレートサイトです。「テクノロジーを通して人々の可能性を最大化する」をミッションに掲げ、プログラミングスクール事業などを運営しております。">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loading active">
+        <div class="loading-contents">
+            <img src="img/logo.png">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loaded">
     <section class="top-wrapper">
         <header>
             <img src="img/logo.png" alt="メインロゴ" class="main-logo">
+            
             <nav class="main-nav">
-                <ul class="pc-menu">
-                    <li>Mission</li>
-                    <li>Servive</li>
-                    <li>Company</li>
-                    <li class="contact-btn"><a href="">Contact</a></li>
+                <ul class="pc-menu menu">
+                        <li><a href="#mission" class="scroll">Mission</a></li>
+                        <li><a href="#service" class="scroll">Service</a></li>
+                        <li><a href="#company" class="scroll">Company</a></li>
+                        <li class="contact-btn"><a href="#contact" class="scroll">Contact</a></li>
                 </ul>
 
-                <a href="#" class="nav-btn sp-only">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <a href="#" class="nav-btn sp-only" id="toggleMenuBtn">
+                    <div class="wrapper">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </a>
             </nav>
         </header>
+        <ul class="sp-menu menu" id="toggleMenu">
+            <li><a href="#mission" class="scroll toggleMenu">Mission</a></li>
+            <li><a href="#service" class="scroll toggleMenu">Service</a></li>
+            <li><a href="#company" class="scroll toggleMenu">Company</a></li>
+            <li class="contact-btn"><a href="#contact" class="scroll toggleMenu">Contact</a></li>
+        </ul>
     </section>
-    <section class="mission">
+    <section class="mission" id="mission">
         <div class="clear-skew">
             <h2 class="sec-header">Mission</h2>
             <h3>「テクノロジーを通じて<br class="sp-only">人々の可能性を最大化する」</h3>
@@ -39,7 +69,7 @@
             <p>このデジタル・デバイドを無くし、全ての人々が自身の可能性を最大化し自己実現できる社会の創造をミッションとして掲げております。</p>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="school clearfix">
             <h2 class="sec-header">Service</h2>
             <div class="circle"></div>
@@ -50,21 +80,22 @@
             <p>私たちはその社会課題を解決するため、高いスキルを持った人材を育成します。</p>
             <p>プログラミングは学習能力に関係なく誰しもが習得可能なスキルです。</p>
             <p>確実に生徒がプログラミングをかける様に全力でサポートします。</p>
+            <a href="#contact" class="contact-btn scroll">Contact</a>
         </div>
-
+        
         <div class="client clearfix">
             <div class="triangle"></div>
             <div>
                 <h3>クライアントワーク事業</h3>
                 <p>弊社の開発理念は社名にもなっております。
-                <p>Permil(パーミル) = 1000分の1を1とする単位(‰)</p>
+                    <p>Permil(パーミル) = 1000分の1を1とする単位(‰)</p>
                 <p class="bottommargin">パーセント(%)よりも更に小さい単位を社名とし、細部まで拘り意図を持つデザインや開発を目指す事を抽象化しております。</p>   
                 <p>私達は創業よりその技術力と人を全て教育に当てて参りました。</p>
                 <p>教育企業ならではの豊富な人材や先端技術を企業の課題解決に向けたいという思いが強くなり、 クライアントワーク事業を発足しました。</p>
             </div>
         </div>
     </section>
-    <section class="company">
+    <section class="company" id="company">
         <h2 class="sec-header">Company</h2>
         <div class="contents-wrap">
             <table>
@@ -109,12 +140,71 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="sec-header">Contact</h2>
+
+        <section class="contact outer">
+            <div class="inner">
+                <form action="contact.php" name="contact" method="POST">
+                    <div class="form-wrap">
+                        <div class="form-item">
+                            <div class="form-hd">
+                                <label class="column-title" for="name">お名前</label>
+                                <span class="column-state state-must">必須</span>
+                            </div>
+                            <input class="column-info" type="text" name="name" id="name" />
+                        </div>
+                        <div class="form-item">
+                            <div class="form-hd">
+                                <label class="column-title" for="name-2">お名前(フリガナ)</label>
+                                <span class="column-state state-must">必須</span>
+                            </div>
+                            <input class="column-info" type="text" name="name_how" id='name_how' />
+                        </div>
+                        <div class="form-item">
+                            <div class="form-hd">
+                                <label class="column-title" for="email">メールアドレス</label>
+                                <span class="column-state state-must">必須</span>
+                            </div>
+                            <input class="column-info" type="email" name="email" id="email" />
+                        </div>
+                        <div class="form-item">
+                            <div class="form-hd">
+                                <label class="column-title" for="tel">電話番号</label>
+                                <span class="column-state state-must">必須</span>
+                            </div>
+                            <input class="column-info" type="tel" name="phone" id="phone" />
+                        </div>
+
+                        <div class="form-item align-items-none">
+                            <div class="form-hd">
+                                <label class="column-title">ご用件</label>
+                                <span class="column-state state-optional">任意</span>
+                            </div>
+                            <textarea id="js-area" name="content" class="column-info purpose close-area"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="privacy-policy">
+                        <input type="checkbox" id="privacy" />
+                        <label for="privacy"><a class="privacy" href="../privacy/index.html">プライバシーポリシー</a>に同意しました</label>
+                    </div>
+                    <div class="submit" onClick="toContact()">
+                        <div class="submit__inner">
+                            <a class="submit-btn">送信</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </section>
 
     <footer>
         <small>Copyright&copy; permil.inc All Rights Reserved</small>
     </footer>
+
+    </div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
